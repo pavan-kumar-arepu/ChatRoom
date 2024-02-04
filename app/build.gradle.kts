@@ -52,6 +52,12 @@ android {
 
 dependencies {
 
+
+    implementation ("androidx.compose.ui:ui:1.1.0")
+    implementation ("androidx.compose.runtime:runtime:1.1.0")
+
+    implementation("androidx.compose.material3:material3:1.0.0-alpha09")
+
     // For Navigation
     implementation("androidx.navigation:navigation-compose:2.7.5")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")

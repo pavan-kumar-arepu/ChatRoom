@@ -13,6 +13,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -20,9 +21,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
+import com.google.android.play.integrity.internal.f
 
 @Composable
 fun SignUpScreen(
+    authViewModel: AuthViewModel,
     onNavigateToLogin: () -> Unit
 ) {
 
@@ -40,6 +43,20 @@ fun SignUpScreen(
 
     var lastName by remember {
         mutableStateOf("")
+    }
+
+    // Inside SignUpScreen Composable
+    if (authViewModel.showSuccessDialog.value == true) {
+        ShowSuccessDialog(
+            title = "Signup Successful",
+            message = "Account created for $email!",
+            onDismiss = {
+//                authViewModel.showSuccessDialog.value = false
+                        },
+            onPositiveClick = {
+                // Handle positive click action, e.g., navigate to another screen
+            }
+        )
     }
 
     Column(
@@ -83,7 +100,7 @@ fun SignUpScreen(
         )
 
         Button(onClick = {
-        /*TODO*/
+            authViewModel.signUp(email,password, firstName, lastName)
             email = ""
             password = ""
             firstName = ""
