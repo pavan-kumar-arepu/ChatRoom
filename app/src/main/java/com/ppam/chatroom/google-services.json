@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "616119563658",
+    "project_id": "androidfirebaseapp-cd27d",
+    "storage_bucket": "androidfirebaseapp-cd27d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616119563658:android:33e3669954239a6746c473",
+        "android_client_info": {
+          "package_name": "com.ppam.chatroom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZV6rAF2oOp1goELNJNXFr4FjLOrFe3v4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
