@@ -23,8 +23,10 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
 //                    Greeting("Android")
-                    SignUpScreen()
+//                    SignUpScreen()
+                    LoginScreen()
                 }
+
             }
         }
     }

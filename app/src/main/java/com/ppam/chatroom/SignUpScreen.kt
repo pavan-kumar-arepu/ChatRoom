@@ -22,8 +22,9 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 
 @Composable
-
-fun SignUpScreen() {
+fun SignUpScreen(
+    onNavigateToLogin: () -> Unit
+) {
 
     var email by remember {
         mutableStateOf("")
@@ -98,6 +99,8 @@ fun SignUpScreen() {
         Text(text = "Already have an account? Sign in.",
             modifier = Modifier.clickable{
                 // Add Navigation
+                onNavigateToLogin()
             })
     }
 }
+
