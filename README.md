@@ -1,4 +1,4 @@
-# ChatRoom App
+# ChatRoom App(INPROGRESS)
 
 ChatRoom is an Android application that enables users to chat and connect with each other in real-time. The app provides a user-friendly interface for signing up and engaging in conversations with other users.
 
@@ -28,5 +28,4 @@ ChatRoom is an Android application that enables users to chat and connect with e
 ![loginscreen](https://github.com/pavan-kumar-arepu/ChatRoom/assets/13812858/b3660304-2652-4ba8-83c0-e63fb2fb05e5)
 
 <img width="1427" alt="Screenshot 2024-02-04 at 23 52 01" src="https://github.com/pavan-kumar-arepu/ChatRoom/assets/13812858/ec532093-2ff5-4252-9edb-053c5a7deafa">
-<img width="1427" alt="Screenshot 2024-02-04 at 23 50 55" src="https://github.com/pavan-kumar-arepu/ChatRoom/assets/13812858/033c7459-1ba0-41e5-b8ad-a8c5f0623a36">
-
+<img width="1427" alt="Screenshot 2024-02-04 at 23 50 55" src="https://github.com/pavan-kumar-arepu/ChatRoom/assets/13812858/be6f350b-d5d2-4f6a-a9db-6a3ae359fdb5">
